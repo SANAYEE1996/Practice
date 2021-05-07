@@ -29,7 +29,7 @@ public class HW1 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Á¡ÀÇ ¼ö? ");
+		System.out.println("ì ì˜ ìˆ˜? ");
 		Scanner sc = new Scanner(System.in);
 		int numPoints = sc.nextInt();
 		sc.close();
@@ -50,35 +50,35 @@ public class HW1 {
 		start = System.currentTimeMillis();
 		Selection.sort(A);
 		end = System.currentTimeMillis();
-		System.out.println("¼±ÅÃÁ¤·Ä : Á¤·Ä ¿©ºÎ = " + Selection.isSorted(A) + " , ¼Ò¿ä½Ã°£ = " + (end - start) + "ms");
+		System.out.println("ì„ íƒì •ë ¬ : ì •ë ¬ ì—¬ë¶€ = " + Selection.isSorted(A) + " , ì†Œìš”ì‹œê°„ = " + (end - start) + "ms");
 
 		System.arraycopy(B, 0, A, 0, numPoints);
 
 		start1 = System.currentTimeMillis();
 		Insertion.sort(A);
 		end1 = System.currentTimeMillis();
-		System.out.println("»ğÀÔÁ¤·Ä : Á¤·Ä ¿©ºÎ = " + Insertion.isSorted(A) + " , ¼Ò¿ä½Ã°£ = " + (end1 - start1) + "ms");
+		System.out.println("ì‚½ì…ì •ë ¬ : ì •ë ¬ ì—¬ë¶€ = " + Insertion.isSorted(A) + " , ì†Œìš”ì‹œê°„ = " + (end1 - start1) + "ms");
 
 		System.arraycopy(B, 0, A, 0, numPoints);
 
 		start2 = System.currentTimeMillis();
 		Shell.sort(A);
 		end2 = System.currentTimeMillis();
-		System.out.println("ShellÁ¤·Ä : Á¤·Ä ¿©ºÎ = " + Shell.isSorted(A) + " , ¼Ò¿ä½Ã°£ = " + (end2 - start2) + "ms");
+		System.out.println("Shellì •ë ¬ : ì •ë ¬ ì—¬ë¶€ = " + Shell.isSorted(A) + " , ì†Œìš”ì‹œê°„ = " + (end2 - start2) + "ms");
 
 		System.arraycopy(B, 0, A, 0, numPoints);
 
 		start3 = System.currentTimeMillis();
 		MergeTD.sort(A);
 		end3 = System.currentTimeMillis();
-		System.out.println("Top Down ÇÕº´Á¤·Ä : Á¤·Ä ¿©ºÎ = " + MergeTD.isSorted(A) + " , ¼Ò¿ä½Ã°£ = " + (end3 - start3) + "ms");
+		System.out.println("Top Down í•©ë³‘ì •ë ¬ : ì •ë ¬ ì—¬ë¶€ = " + MergeTD.isSorted(A) + " , ì†Œìš”ì‹œê°„ = " + (end3 - start3) + "ms");
 
 		System.arraycopy(B, 0, A, 0, numPoints);
 
 		start4 = System.currentTimeMillis();
 		MergeBU.sort(A);
 		end4 = System.currentTimeMillis();
-		System.out.println("Bottom Up ÇÕº´Á¤·Ä : Á¤·Ä ¿©ºÎ = " + MergeBU.isSorted(A) + " , ¼Ò¿ä½Ã°£ = " + (end4 - start4) + "ms");
+		System.out.println("Bottom Up í•©ë³‘ì •ë ¬ : ì •ë ¬ ì—¬ë¶€ = " + MergeBU.isSorted(A) + " , ì†Œìš”ì‹œê°„ = " + (end4 - start4) + "ms");
 
 	}
 }
