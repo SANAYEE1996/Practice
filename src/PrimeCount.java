@@ -1,7 +1,7 @@
 
 public class PrimeCount {
 	public static void main(String[] args) {
-		int n = 10;
+		int n = 100000;
 		
         
         System.out.println(primeCount(n));
