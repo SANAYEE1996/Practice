@@ -50,35 +50,55 @@ public class HW1 {
 		start = System.currentTimeMillis();
 		Selection.sort(A);
 		end = System.currentTimeMillis();
+<<<<<<< HEAD
 		System.out.println("삽입정렬 = " + Selection.isSorted(A) + " , 소요시간 = " + (end - start) + "ms");
+=======
+		System.out.println("선택정렬 : 정렬 여부 = " + Selection.isSorted(A) + " , 소요시간 = " + (end - start) + "ms");
+>>>>>>> branch 'master' of https://github.com/SANAYEE1996/Practice.git
 
 		System.arraycopy(B, 0, A, 0, numPoints);
 
 		start1 = System.currentTimeMillis();
 		Insertion.sort(A);
 		end1 = System.currentTimeMillis();
+<<<<<<< HEAD
 		System.out.println("선택정렬 = " + Insertion.isSorted(A) + " , 소요시간 = " + (end1 - start1) + "ms");
+=======
+		System.out.println("삽입정렬 : 정렬 여부 = " + Insertion.isSorted(A) + " , 소요시간 = " + (end1 - start1) + "ms");
+>>>>>>> branch 'master' of https://github.com/SANAYEE1996/Practice.git
 
 		System.arraycopy(B, 0, A, 0, numPoints);
 
 		start2 = System.currentTimeMillis();
 		Shell.sort(A);
 		end2 = System.currentTimeMillis();
+<<<<<<< HEAD
 		System.out.println("Shell정렬  = " + Shell.isSorted(A) + " , 소요시간 = " + (end2 - start2) + "ms");
+=======
+		System.out.println("Shell정렬 : 정렬 여부 = " + Shell.isSorted(A) + " , 소요시간 = " + (end2 - start2) + "ms");
+>>>>>>> branch 'master' of https://github.com/SANAYEE1996/Practice.git
 
 		System.arraycopy(B, 0, A, 0, numPoints);
 
 		start3 = System.currentTimeMillis();
 		MergeTD.sort(A);
 		end3 = System.currentTimeMillis();
+<<<<<<< HEAD
 		System.out.println("Top Down 정렬  = " + MergeTD.isSorted(A) + " , 소요시간 = " + (end3 - start3) + "ms");
+=======
+		System.out.println("Top Down 합병정렬 : 정렬 여부 = " + MergeTD.isSorted(A) + " , 소요시간 = " + (end3 - start3) + "ms");
+>>>>>>> branch 'master' of https://github.com/SANAYEE1996/Practice.git
 
 		System.arraycopy(B, 0, A, 0, numPoints);
 
 		start4 = System.currentTimeMillis();
 		MergeBU.sort(A);
 		end4 = System.currentTimeMillis();
+<<<<<<< HEAD
 		System.out.println("Bottom Up정렬  = " + MergeBU.isSorted(A) + " , 소요시간 = " + (end4 - start4) + "ms");
+=======
+		System.out.println("Bottom Up 합병정렬 : 정렬 여부 = " + MergeBU.isSorted(A) + " , 소요시간 = " + (end4 - start4) + "ms");
+>>>>>>> branch 'master' of https://github.com/SANAYEE1996/Practice.git
 
 	}
 }
