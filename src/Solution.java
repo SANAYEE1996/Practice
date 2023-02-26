@@ -1,31 +1,22 @@
-
-import java.util.Scanner;
+import java.util.Arrays;
 
 class Solution {
-
-
-	public static void main(String args[]) throws Exception {
-
-		Scanner sc = new Scanner(System.in);
-		int T;
-		T = sc.nextInt();
-		int a = 0;
-		int c = 1;
+	public String solution(String[] participant, String[] completion) {
+		String answer = "";
 		
-		for (int i = 1; i <= T; i++) {
-			a = sc.nextInt();
-			while(true) {
-				if(Math.sqrt(a*c) - (int)Math.sqrt(a*c) == 0) {
-					break;
-				}
-				c++;
-			}
-			System.out.println("#"+i+" "+c);
-			a = 0;
-			c = 1;
+		Arrays.sort(participant);
+		Arrays.sort(completion);
+		
+		for (int i = 0; i < participant.length; i++) {
+            if(i < completion.length && (completion[i].equals(participant[i])) == false){
+	            answer = participant[i];
+	            break;
+            }
+            else if (i == participant.length-1){
+                answer = participant[i];
+            }
 		}
 
-		sc.close();
+		return answer;
 	}
-	
 }
